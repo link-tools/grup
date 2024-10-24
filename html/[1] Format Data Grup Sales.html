@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grup Sales Converter</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Format Data Grup Sales</h2>
+        <input type="file" id="instructionsInput" accept=".xlsx, .csv">
+        <h2>Upload Data Sales</h2>
+        <input type="file" id="fileInput" accept=".xlsx, .csv">
+        <button onclick="processFiles()">Process Files</button>
+        <a id="downloadLink" style="display: none;">Download Data Grup Sales Excel</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="../javascript/script1.js"></script>
+</body>
+</html>

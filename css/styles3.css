@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto; /* Mengatur margin untuk container */
+    background-color: #fff; /* Warna latar konten */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    overflow: hidden; /* Menghindari elemen keluar dari container */
+}
+
+.tabs {
+    display: flex;
+    background-color: #007BFF; /* Warna latar tab */
+    padding: 10px;
+    border-bottom: 2px solid #0056b3; /* Garis bawah untuk pemisah tab dan konten */
+}
+
+.tab-button {
+    flex: 1;
+    padding: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white; /* Warna teks */
+    font-size: 16px;
+    font-weight: bold; /* Tebalkan teks */
+    text-align: center; /* Pusatkan teks */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi */
+}
+
+.tab-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar saat hover */
+    transform: scale(1.05); /* Membesarkan sedikit saat hover */
+}
+
+.tab-button.active {
+    border-bottom: 3px solid #0056b3; /* Garis bawah tab aktif */
+    background-color: rgba(255, 255, 255, 0.1); /* Warna latar belakang tab aktif */
+}
+
+.tab-content {
+    padding: 20px; /* Spasi dalam konten */
+    border-radius: 0 0 8px 8px; /* Sudut melengkung di bawah */
+    background-color: white; /* Warna latar konten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan konten */
+}
+
+.tab {
+    display: none; /* Sembunyikan tab */
+}
+
+.tab.active {
+    display: block; /* Tampilkan tab aktif */
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 200px); /* Tinggi dinamis berdasarkan viewport */
+    border: none; /* Hapus border */
+}
+
+/* Responsif untuk iframe */
+@media (max-width: 600px) {
+    iframe {
+        height: 300px; /* Tinggi lebih kecil di layar lebih kecil */
+    }
+}
+
+/* Animasi Transisi */
+.tab-content {
+    transition: all 0.3s ease; /* Transisi untuk konten tab */
+}
